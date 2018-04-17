@@ -239,11 +239,7 @@ Shader "Hidden/OutlineEffect"
 						outline *= _FillAmount;
 				}					
 					
-				//return outlineSource;		
-				if (hasOutline)
-					return lerp(originalPixel + outline, outline, _FillAmount);
-				else
-					return originalPixel;
+				return originalPixel + outline;
 			}
 			
 			ENDCG

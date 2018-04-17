@@ -79,7 +79,7 @@ Shader "Hidden/OutlineBufferEffect" {
 
 			float alpha = c.a * 99999999;
 
-			o.Albedo = _Color * alpha;
+			o.Albedo = _Color;
 			o.Alpha = alpha;
 			o.Emission = o.Albedo;
 		}
